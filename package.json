@@ -1,0 +1,29 @@
+{
+  "name": "lovedicons",
+  "version": "0.0.0",
+  "description": "These icons are loved by developers!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/iamakbarsha1/lovedicons#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamakbarsha1/lovedicons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamakbarsha1/lovedicons/issues"
+  },
+  "keywords": [
+    "reactjs",
+    "nextjs",
+    "loved",
+    "icons",
+    "svg",
+    "react",
+    "next",
+    "developer"
+  ],
+  "author": "Akbar Sha S <iamakbarsha1@gmail.com>",
+  "license": "MIT"
+}

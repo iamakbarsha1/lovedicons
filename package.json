@@ -4,13 +4,17 @@
   "description": "These icons are loved by developers!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "export": "figma-export use-config figma.config.js"
   },
   "homepage": "https://github.com/iamakbarsha1/lovedicons#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iamakbarsha1/lovedicons.git"
   },
+  "files": [
+    "outline/",
+    "solid/"
+  ],
   "bugs": {
     "url": "https://github.com/iamakbarsha1/lovedicons/issues"
   },
@@ -25,5 +29,11 @@
     "developer"
   ],
   "author": "Akbar Sha S <iamakbarsha1@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@figma-export/cli": "^4.4.0",
+    "@figma-export/output-components-as-svg": "^4.4.0",
+    "@figma-export/transform-svg-with-svgo": "^4.4.0",
+    "dotenv": "^16.0.1"
+  }
 }

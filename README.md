@@ -1,4 +1,4 @@
-These iicons are loved by developers!
+These icons are loved by developers!
 
 With love,
 AKbar Sha ❤

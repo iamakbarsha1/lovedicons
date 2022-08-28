@@ -4,7 +4,12 @@
   "description": "These icons are loved by developers!",
   "main": "index.js",
   "scripts": {
-    "export": "figma-export use-config figma.config.js"
+    "clean": "rimraf outline solid package *.tgz",
+    "export": "figma-export use-config figma.config.js",
+    "test": "node test.js",
+    "build": "run-s clean export",
+    "np": "np",
+    "release": "run-s build np"
   },
   "homepage": "https://github.com/iamakbarsha1/lovedicons#readme",
   "repository": {
@@ -34,6 +39,10 @@
     "@figma-export/cli": "^4.4.0",
     "@figma-export/output-components-as-svg": "^4.4.0",
     "@figma-export/transform-svg-with-svgo": "^4.4.0",
-    "dotenv": "^16.0.1"
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.1",
+    "np": "^7.6.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
   }
 }

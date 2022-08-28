@@ -1,4 +1,4 @@
-These icons are loved by developers!
+These icons will be loved by all developers!
 
 With love,
-AKbar Sha ❤
+Amson Maurice && Akbar Sha ❤

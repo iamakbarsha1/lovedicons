@@ -1,11 +1,16 @@
 # build output
 
+# .gitignore
+
 # dependencies
 /node_modules
 
 # build
 /outline
 /solid
+/react
+/src
+/sprite
 
 # misc
 .DS_Store

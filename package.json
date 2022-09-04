@@ -10,7 +10,7 @@
     "svgr": "svgr --icon --title-prop --replace-attr-values '#fff=currentColor' -d src figmaIcons",
     "svgrBundle": "rollup -c",
     "svgrBuild": "run-s clean export svgr svgrBundle",
-    "svgrRelease": "run-s svgrBuild np",
+    "svgrRelease": "run-s np",
     "test": "node test.js",
     "bundle": "rollup -c",
     "build": "run-s clean export bundle",

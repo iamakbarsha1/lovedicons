@@ -1,7 +1,7 @@
 const fs = require("fs");
 const $ = require("cheerio");
 
-const directories = ["src/outline", "src/solid"];
+const directories = ["src/outline/index.js", "src/solid/index.js"];
 // const directories = ["src"];
 let errors = 0;
 

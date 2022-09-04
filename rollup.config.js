@@ -15,6 +15,7 @@ const packageJSON = require("./package.json");
 // const React = require("react");
 // "module": "dist/outline/index.js",
 // "main": "dist/amsonIcons/index.js",
+// "test": "node test.js",
 
 const config = [
   {

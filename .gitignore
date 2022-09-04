@@ -11,6 +11,8 @@
 /react
 /src
 /sprite
+/assets
+/figmaIcons
 
 # misc
 .DS_Store

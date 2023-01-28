@@ -4,6 +4,8 @@
 
 These icons will be loved by all developers!
 
+Make Lovedicons your go-to source for handcrafted icons and let our collection of beautiful, versatile designs enhance your project.
+
 With love,\
 Amson Maurice && Akbar Sha ❤
 
@@ -18,36 +20,38 @@ yarn add lovedicons
 ## Usage
 
 ```bash
-import { ReceiptItemO } from "lovedicons/dist/outline"; // outline icons
-import { WalletAddS } from "lovedicons/dist/solid"; // solid icons
-
+import { GadAirpodsO } from "lovedicons/dist/gadO
+  
 const Lovedicons = () => {
   return (
-    <div>
-      <ReceiptItemO />
-      <WalletAddS />
-    </div>
-  );
-};
+    <>
+      <GadAirpodsO />
+    </>
+  )
+}
 
-export default Lovedicons;
+export default Lovedicons
 ```
 
-## Icons - (more icons to be added soon)
+## Customize with TailwindCSS
 
-Outline -->
+```bash
+import { GadAirpodsO } from "lovedicons/dist/gadO
+  
+const HandcraftedIcons = () => {
+  return (
+    <>
+      <GadAirpodsO className="w-5 h-5 text-black" />
+    </>
+  )
+}
+  
+export default HandcraftedIcons
+```
 
-1. ReceiptItemO,
-2. WalletAddO,
-3. WalletCheckO,
-4. WalletEmptyO,
+## Demo
+https://lovedicons.netlify.app/
 
-Solid -->
-
-1. ReceiptItemS,
-2. WalletAddS,
-3. WalletCheckS,
-4. WalletEmptyS,
 
 ## License
 

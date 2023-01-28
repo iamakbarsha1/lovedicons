@@ -21,13 +21,13 @@
     "cdn": "sprite/outline.svg",
     "unpkg": "sprite/outline.svg"
   },
-  "homepage": "https://github.com/iamakbarsha1/lovedicons#readme",
+  "homepage": "https://lovedicons.netlify.app/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iamakbarsha1/lovedicons.git"
   },
   "files": [
-    "src"
+    "dist"
   ],
   "peerDependencies": {
     "react": ">= 16"

@@ -11,6 +11,11 @@
 /react
 /src
 /sprite
+
+/dist
+/distAPI
+/distOld
+/srcAPI 
 /assets
 /figmaIcons
 
@@ -32,4 +37,5 @@ yarn-error.log*
 
 # Output of 'npm pack'
 *.tgz
+*.zip
 /package

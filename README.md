@@ -1,5 +1,3 @@
-<!-- ![alt text](http://codeskulptor-assets.commondatastorage.googleapis.com/assets_clock_background.png) -->
-
 ## lovedicons
 
 These icons will be loved by all developers!
@@ -8,19 +6,20 @@ Make Lovedicons your go-to source for handcrafted icons and let our collection o
 
 With love,\
 Amson Maurice && Akbar Sha ❤
-
 ## Installation
 
+Install [lovedicons](https://lovedicons.netlify.app/) with npm
+
 ```bash
-npm install lovedicons --save
-# or
-yarn add lovedicons
+  npm install lovedicons --save
+  # or
+  yarn add lovedicons
 ```
+    
+## Usage/Examples
 
-## Usage
-
-```bash
-import { GadAirpodsO } from "lovedicons/dist/gadO
+```javascript
+import { GadAirpodsO } from "lovedicons/dist/gadO"
   
 const Lovedicons = () => {
   return (
@@ -33,10 +32,10 @@ const Lovedicons = () => {
 export default Lovedicons
 ```
 
-## Customize with TailwindCSS
+## Customize with Tailwind CSS
 
-```bash
-import { GadAirpodsO } from "lovedicons/dist/gadO
+```javascript
+import { GadAirpodsO } from "lovedicons/dist/gadO"
   
 const HandcraftedIcons = () => {
   return (
@@ -51,8 +50,16 @@ export default HandcraftedIcons
 
 ## Demo
 https://lovedicons.netlify.app/
+## Documentation
+
+[Documentation](https://lovedicons.netlify.app/)
+
+## Authors
+
+- [@iamakbarsha1](https://github.com/iamakbarsha1)
 
 
-## License
+## Badges
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+

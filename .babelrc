@@ -1,7 +1,6 @@
 {
   "presets": [
     ["@babel/preset-env", { "targets": "defaults" }],
-    "@babel/preset-react" // old one
-    // ["@babel/preset-react", { "runtime": "automatic" }]
+    "@babel/preset-react"
   ]
 }

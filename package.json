@@ -15,7 +15,7 @@
     "test": "node test.js",
     "bundle": "rollup -c",
     "build": "run-s clean export bundle",
-    "np": "np",
+    "np": "np --branch=main",
     "release": "run-s build np",
     "jsdelivr": "sprite/outline.svg",
     "cdn": "sprite/outline.svg",

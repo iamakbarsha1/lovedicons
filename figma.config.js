@@ -1,40 +1,10 @@
-// figma.config.js
 require("dotenv").config();
+
 const fileId = process.env.FILE_ID;
 const token = process.env.FIGMA_TOKEN;
 
-const svgo = require("@figma-export/transform-svg-with-svgo");
-const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
-
 const outputters = [
   require("@figma-export/output-components-as-svg")({ output: "./figmaIcons" }),
-  // require("@figma-export/output-components-as-svgr")({
-  //   getFileExtension: () => ".js",
-  //   getComponentName: ({ componentName, pageName }) =>
-  //     componentName + capitalize(pageName),
-  //   getSvgrConfig: () => ({ typescript: false }),
-  //   output: "./src",
-  // }),
-  // require("@figma-export/output-components-as-svgstore")({
-  //   getIconId: ({ componentName }) => componentName.toLowerCase(),
-  //   output: "./sprite",
-  // }),
-];
-
-// /** @type {import('svgo').PluginConfig[]} */
-const solidSVGOConfig = [
-  { removeDimensions: true },
-  { sortAttrs: true },
-  { removeAttrs: { attrs: "fill" } },
-  { addAttributesToSVGElement: { attribute: { fill: "currentColor" } } },
-];
-
-// /** @type {import('svgo').PluginConfig[]} */
-const outlineSVGOConfig = [
-  { removeDimensions: true },
-  { sortAttrs: true },
-  { removeAttrs: { attrs: "stroke" } },
-  { addAttributesToSVGElement: { attribute: { stroke: "currentColor" } } },
 ];
 
 /** @type {import('@figma-export/types').FigmaExportRC} */
@@ -167,9 +137,7 @@ module.exports = {
               {
                 name: "preset-default",
                 params: {
-                  overrides: {
-                    // removeViewBox: false,
-                  },
+                  overrides: {},
                 },
               },
               {
@@ -188,14 +156,6 @@ module.exports = {
                 name: "addAttributesToSVGElement",
                 params: { attributes: [{ stroke: "currentColor" }] },
               },
-              // { removeDimensions: true },
-              // { sortAttrs: true },
-              // { removeAttrs: { attrs: "fill" } },
-              // {
-              //   addAttributesToSVGElement: {
-              //     attribute: { fill: "currentColor" },
-              //   },
-              // },
             ],
           }),
         ],

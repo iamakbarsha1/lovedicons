@@ -1,26 +1,7 @@
-// import typescript from "@rollup/plugin-typescript";
-// // import ts from "typescript";
-// import resolve from "@rollup/plugin-node-resolve";
-// import commonjs from "@rollup/plugin-commonjs";
-// import dts from "rollup-plugin-dts";
-// import { terser } from "rollup-plugin-terser";
-// import peerDepsExternal from "rollup-plugin-peer-deps-external";
-// import { transform } from "typescript";
-
 import { babel } from "@rollup/plugin-babel";
 import filesize from "rollup-plugin-filesize";
 
 const packageJSON = require("./package.json");
-
-// const _extends = require("@babel/runtime/helpers/extends");
-// const React = require("react");
-// "module": "dist/outline/index.js",
-// "main": "dist/amsonIcons/index.js",
-// "test": "node test.js",
-// --config-file
-// "svgr": "svgr --icon --title-prop --replace-attr-values '#fff=currentColor' -d src figmaIcons",
-
-// "clean": "rimraf figmaIcons dist outline solid o s react node src sprite package *.tgz",
 
 const categoryMap = {
   archiveOutline: "arcO",
@@ -108,9 +89,6 @@ function getFileName(chunkInfo) {
 
 const config = [
   {
-    // "main": "dist/cjs/index.js",
-    // "module": "dist/esm/index.js",
-    // input: ["src/solid/index.js", "src/outline/index.js"],
     input: [
       "src/archiveSolid/index.js",
       "src/archiveOutline/index.js",
@@ -179,86 +157,20 @@ const config = [
     ],
     output: [
       {
-        // file: packageJSON.main, // outline
         dir: packageJSON.main,
         format: "cjs",
         entryFileNames: (chunkInfo) => getFileName(chunkInfo), // custom naming
-        // sourcemap: true,
       },
-      // {
-      //   // file: packageJSON.module,
-      //   dir: packageJSON.main,
-      //   format: "cjs",
-      //   // sourcemap: true,
-      // },
-      // {
-      //   // file: packageJSON.module,
-      //   dir: packageJSON.main,
-      //   format: "cjs",
-      //   // sourcemap: true,
-      // },
-      // {
-      //   file: packageJSON.main,
-      //   // dir: "node",
-      //   format: "cjs",
-      //   sourcemap: true,
-      // },
     ],
-    // external: ["react", "react-dom", "styled-components", /@babel\/runtime/],
     external: ["react", "react-dom", /@babel\/runtime/],
     plugins: [
-      // new one - YT
       babel({
         babelHelpers: "runtime",
         plugins: ["@babel/plugin-transform-runtime"],
       }),
       filesize(),
-      // old one - LogRocket
-      // peerDepsExternal(),
-      // resolve(),
-      // commonjs(),
-      // typescript({
-      //   compilerOptions: { lib: ["es5", "es6", "dom"], target: "es5" },
-      // }),
-      // terser(),
     ],
   },
-  // {
-  //   input: "src/outline/index.js",
-  //   output: [
-  //     {
-  //       // file: packageJSON.main, // solid
-  //       // dir: "react",
-  //       dir: packageJSON.module,
-  //       format: "cjs",
-  //       // sourcemap: true,
-  //     },
-  //     // {
-  //     //   file: packageJSON.main,
-  //     //   // dir: "node",
-  //     //   format: "cjs",
-  //     //   sourcemap: true,
-  //     // },
-  //   ],
-  //   // external: ["react", "react-dom", "styled-components", /@babel\/runtime/],
-  //   external: [/@babel\/runtime/, "react"],
-  //   plugins: [
-  //     // new one - YT
-  //     babel({
-  //       babelHelpers: "runtime",
-  //       plugins: ["@babel/plugin-transform-runtime"],
-  //     }),
-  //     filesize(),
-  //     // old one - LogRocket
-  //     // peerDepsExternal(),
-  //     // resolve(),
-  //     // commonjs(),
-  //     // typescript({
-  //     //   compilerOptions: { lib: ["es5", "es6", "dom"], target: "es5" },
-  //     // }),
-  //     // terser(),
-  //   ],
-  // },
 ];
 
 export default config;

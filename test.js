@@ -67,7 +67,7 @@ const directories = [
   "figmaIcons/weatherSolid",
   "figmaIcons/weatherOutline",
 ];
-// const directories = ["src"];
+
 let errors = 0;
 
 // directories.forEach((dir) =>
